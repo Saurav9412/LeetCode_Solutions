@@ -1,5 +1,7 @@
-SELECT
-    score,
-    DENSE_RANK() OVER (ORDER BY score DESC) AS `rank`
-FROM Scores
-ORDER BY score DESC;
+# Write your MySQL query statement below
+SELECT name
+    ,population
+    ,area
+FROM World
+WHERE area >= 3000000
+    OR population >= 25000000;
